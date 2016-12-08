@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/uktrade/iigb-cms-tags#readme",
   "dependencies": {
+    "colors": "^1.1.2",
+    "debug": "^2.3.3",
     "js-yaml": "^3.7.0"
   }
 }
