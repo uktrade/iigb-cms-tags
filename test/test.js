@@ -1,8 +1,7 @@
 var fs = require('fs');
 var html = fs.readFileSync(__dirname + '/test.html', 'utf-8').toString();
-var cmsField = require('..');
-var content =  cmsField.parse(html);
-
+var cmsTags = require('..');
+var content =  cmsTags.parse(html);
 
 
 console.log(content);

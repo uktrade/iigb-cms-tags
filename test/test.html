@@ -6,15 +6,56 @@
 </head>
 <body>
  <!--
-  [cms-field]
-    name: pageTitle
-    label: Page Title
-    help:
-    type: text
-    value:
-    optional: false
-    placeHolder:
-  [/cms-field]
+  [cms-fields]
+    pageTitle:
+      type: text
+      label: Page Title
+      placeHolder: Enter page title
+      help: This title will show up on browser
+      value: default value
+      required: true
+    pageHeader:
+      type: content
+      label: Page intro
+      help: Select a markdown file for intro
+      fields:
+        externalVideo:
+          type: text
+        heroVideo:
+          type: select
+          label: Select one
+          help: select one
+          options:
+            - name: 'Youtube Video'
+              value: 'Youtube'
+            - name: 'Youku'
+              value: 'Youku'
+        heroVideoImage:
+          type: text
+      locale:
+        global: true
+        type: fieldset
+        fields:
+          language:
+            type: text
+          country:
+            type: text
+          countryName:
+            type: text
+  [/cms-fields]
+
+  [cms-fields]
+    industries:
+      type: content
+      multiple: true
+      label: Industries
+      fields:
+        thumbnail:
+          type: text
+        link:
+          type: textarea
+
+  [/cms-fields]
         -->
 </body>
 </html>
