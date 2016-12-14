@@ -1,6 +1,6 @@
 {
   "name": "iigb-cms-tags",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "parses cms tags in layout files",
   "main": "index.js",
   "scripts": {
